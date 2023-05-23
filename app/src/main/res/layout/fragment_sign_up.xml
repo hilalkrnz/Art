@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignUpFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/hello"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:fontFamily="@font/pacifico"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_160"
+        android:drawableStart="@drawable/person_icon"
+        android:drawablePadding="@dimen/space_10"
+        android:hint="@string/user_name"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/hello" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextEmailAdress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_40"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="@dimen/space_10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_40"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawablePadding="@dimen/space_10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAdress"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_40"
+        android:background="@drawable/button_background"
+        android:text="@string/sign_up_bttn"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

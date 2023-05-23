@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ArtBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="art_name">Art Name</string>
+    <string name="save">Save</string>
+    <string name="paintType"> Paint Type </string>
+    <string name="art_title"> Title </string>
+    <string name="art_caption"> Write a caption…</string>
+    <string name="caption_text">Tiring but beautiful..</string>
+    <string name="login">LOGIN</string>
+    <string name="are_you_not_registered">Are you not registered?</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="password">Pasword</string>
+    <string name="email">Email</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_name">User Name</string>
+    <string name="hello">Hello</string>
+    <string name="sign_up_bttn">SIGN UP</string>
+    <string name="art_book">Artbook</string>
+</resources>

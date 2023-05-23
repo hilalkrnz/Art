@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        app:fontFamily="@font/pacifico"
+        android:textSize="@dimen/size_48"
+        app:layout_constraintBottom_toTopOf="@+id/emailAdress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailAdress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_160"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="@dimen/space_10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_40"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawablePadding="@dimen/space_10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_160"
+        android:background="@drawable/button_background"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdress" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/space_24"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/are_you_not_registered" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
