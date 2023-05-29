@@ -6,9 +6,13 @@ This app is for saving artwork. SQLite database is used.
 
 <div align="center">
   
-  https://github.com/hilalkrnz/Art/assets/57602386/79da0447-eb99-42b9-ae09-747cd90946e8
+  https://github.com/hilalkrnz/Art/assets/57602386/b28faa58-1401-4f60-8a56-2e7aa7653af1
   
 <div/>
+
+
+
+
 
 
 
